@@ -63,6 +63,7 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.8);
 }
 
 .activity-card h4 {
@@ -72,6 +73,101 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffffff 0%, #eef4ff 100%);
+  border: 1px solid #d7e4ff;
+}
+
+.participants-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #143a7b;
+}
+
+.participants-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background-color: #1a237e;
+  color: white;
+  font-size: 14px;
+}
+
+.participants-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  color: #1f2937;
+}
+
+.participants-list li {
+  margin-bottom: 4px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.participant-delete-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f2b8b5;
+  border-radius: 50%;
+  background-color: #fff2f2;
+  color: #c62828;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.participant-delete-btn:hover {
+  background-color: #ffdede;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(198, 40, 40, 0.18);
+}
+
+.participant-delete-btn:active {
+  transform: translateY(0);
+}
+
+.participant-delete-btn span {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.participants-list li:last-child {
+  margin-bottom: 0;
+}
+
+.empty-participants {
+  list-style: none;
+  color: #607089;
+  font-style: italic;
+  padding: 6px 0;
 }
 
 .form-group {
